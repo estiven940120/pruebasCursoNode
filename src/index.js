@@ -3,8 +3,7 @@ var log  = require("./modules/log");
 var consts = require("./utils/cons");
 var firebase = require("../libs")
 
-var server = http.createServer(function(request, response){
-    
+var server = http.createServer(function(request, response){ 
     if(request.url === "/"){
         response.writeHead(200, {"Content-Tipe": "text/html"});
         response.write("<html><body>Home Page</body></html>");
